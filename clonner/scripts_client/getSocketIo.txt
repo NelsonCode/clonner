@@ -1,0 +1,6 @@
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.min.js"
+integrity="sha512-fB746S+jyTdN2LSWbYSGP2amFYId226wpOeV4ApumcDpIttPxvk1ZPOgnwqwQziRAtZkiFJVx9F64GLAtoIlCQ=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
