@@ -19,7 +19,7 @@ def get_ip():
 
 @click.command()
 @click.option('--url', default="", help='URL for clone website')
-@click.option('--port', default=5000, help='PORT for runner server')
+@click.option('--port', default="5000", help='PORT for runner server')
 def hello(url, port):
     clonner = Clonner(url=url)
     output = clonner.clone()

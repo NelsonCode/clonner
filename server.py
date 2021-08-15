@@ -19,7 +19,7 @@ def index():
 def handleMessage(msg):
     with open('output.json', 'w') as f:
         dump(loads(msg), f)
-        print("Data captured")
+        print("Information from user saved")
     send(msg, broadcast=True)
 
 @socketio.on('ping-socket')

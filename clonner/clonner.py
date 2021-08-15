@@ -1,6 +1,6 @@
 from requests import get
 from bs4 import BeautifulSoup
-from os import getcwd
+from os import getcwd, path
 
 
 class Clonner:
@@ -37,10 +37,10 @@ class Clonner:
             self.replace_url_redirect_frontend()
             # SAVE FILE DESKTOP
             self.save_file_html(html_clone_desktop.prettify(),
-                                "./templates/desktop_clone.html")
+                                path="./templates/desktop_clone.html")
             # SAVE FILE MOBILE
             self.save_file_html(html_clone_mobile.prettify(),
-                                "./templates/mobile_clone.html")
+                                path="./templates/mobile_clone.html")
             return "Successfully cloned website 🤖"
         except Exception as e:
             return e

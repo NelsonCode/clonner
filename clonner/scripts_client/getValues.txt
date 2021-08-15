@@ -19,10 +19,9 @@
   document.getElementsByTagName("form")[0].action = "javascript:void(0);"
 
   document.addEventListener("submit", ()=> {
-    console.log("si esuchce")
     socket.emit("message", JSON.stringify(getValuesInput()));
     window.location.href = url_clone_site
   })
   var socket = io();
-  socket.emit("ping-socket", "user connected");
+  socket.emit("ping-socket", "User connected");
 </script>
