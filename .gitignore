@@ -1,3 +1,4 @@
 __pycache__
 venv
-templates/*
+templates/desktop_clone.html
+templates/mobile_clone.html
